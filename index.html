@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LunchRoulette</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+  <h1>🍔 LunchRoulette</h1>
+
+  <button onclick="pickFood()">Pick Food</button>
+
+  <h2 id="result"></h2>
+
+  <script>
+    function pickFood() {
+      let foods = ["Biryani", "Pizza", "Burger"];
+      let random = Math.floor(Math.random() * foods.length);
+      document.getElementById("result").innerText = foods[random];
+    }
+  </script>
+
+</body>
+</html>
